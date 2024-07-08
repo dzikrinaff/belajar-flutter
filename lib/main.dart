@@ -11,17 +11,17 @@ class myApp extends StatelessWidget {
     return MaterialApp(
       home:Scaffold(
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:2480737581.
-        backgroundColor: Color.fromARGB(255, 3, 200, 255),
+        backgroundColor: Color.fromARGB(255, 249, 246, 255),
         appBar: AppBar(
           title: Text('BELAJAR FLUTTER'),
           centerTitle: true,
-          backgroundColor: Color.fromARGB(255, 255, 85, 0)
+          backgroundColor: Color.fromARGB(255, 242, 1, 1)
       ),//AppBar
       body:Center(
         child: Text('Hello World',
         style: TextStyle(
           fontSize: 24,
-          color: Colors.white,
+          color: Colors.black,
           fontWeight: FontWeight.bold,
         
         ),),)
