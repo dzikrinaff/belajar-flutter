@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/container_widget.dart';
+import 'package:myapp/news_container.dart';
 
 void main() {
   runApp(myApp());
@@ -17,16 +19,29 @@ class myApp extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Color.fromARGB(255, 242, 1, 1)
       ),//AppBar
-      body:Center(
-        child: Text('Hello World',
-        style: TextStyle(
-          fontSize: 24,
-          color: Colors.black,
-          fontWeight: FontWeight.bold,
-        
-        ),),)
+      body: NewsContainer()
      
       ),
     );
+  }
+}
+
+class TextWidget extends StatelessWidget {
+  const TextWidget({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text('Hello World',
+      style: TextStyle(
+        fontSize: 24,
+        color: Colors.black,
+        fontWeight: FontWeight.bold,
+      
+      ) ,
+      )
+      ,);
   }
 }
